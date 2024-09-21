@@ -6,6 +6,16 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		029587882C9ECA0D00DEF056 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 029587872C9ECA0D00DEF056 /* MapboxMaps */; };
+		0295878B2C9ED10300DEF056 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 0295878A2C9ED10300DEF056 /* Auth */; };
+		0295878D2C9ED10300DEF056 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 0295878C2C9ED10300DEF056 /* Functions */; };
+		0295878F2C9ED10300DEF056 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 0295878E2C9ED10300DEF056 /* PostgREST */; };
+		029587912C9ED10300DEF056 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 029587902C9ED10300DEF056 /* Realtime */; };
+		029587932C9ED10300DEF056 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 029587922C9ED10300DEF056 /* Storage */; };
+		029587992C9ED2DD00DEF056 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 029587982C9ED2DD00DEF056 /* Supabase */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		029587682C9EC62E00DEF056 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +39,22 @@
 		029587712C9EC62E00DEF056 /* rideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		029587852C9EC87D00DEF056 /* Exceptions for "ride" folder in "ride" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 029587562C9EC62C00DEF056 /* ride */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		029587592C9EC62C00DEF056 /* ride */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				029587852C9EC87D00DEF056 /* Exceptions for "ride" folder in "ride" target */,
+			);
 			path = ride;
 			sourceTree = "<group>";
 		};
@@ -52,6 +75,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				029587992C9ED2DD00DEF056 /* Supabase in Frameworks */,
+				029587932C9ED10300DEF056 /* Storage in Frameworks */,
+				0295878F2C9ED10300DEF056 /* PostgREST in Frameworks */,
+				0295878D2C9ED10300DEF056 /* Functions in Frameworks */,
+				0295878B2C9ED10300DEF056 /* Auth in Frameworks */,
+				029587912C9ED10300DEF056 /* Realtime in Frameworks */,
+				029587882C9ECA0D00DEF056 /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +108,7 @@
 				029587592C9EC62C00DEF056 /* ride */,
 				0295876A2C9EC62E00DEF056 /* rideTests */,
 				029587742C9EC62E00DEF056 /* rideUITests */,
+				029587972C9ED2DD00DEF056 /* Frameworks */,
 				029587582C9EC62C00DEF056 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +121,13 @@
 				029587712C9EC62E00DEF056 /* rideUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		029587972C9ED2DD00DEF056 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +150,13 @@
 			);
 			name = ride;
 			packageProductDependencies = (
+				029587872C9ECA0D00DEF056 /* MapboxMaps */,
+				0295878A2C9ED10300DEF056 /* Auth */,
+				0295878C2C9ED10300DEF056 /* Functions */,
+				0295878E2C9ED10300DEF056 /* PostgREST */,
+				029587902C9ED10300DEF056 /* Realtime */,
+				029587922C9ED10300DEF056 /* Storage */,
+				029587982C9ED2DD00DEF056 /* Supabase */,
 			);
 			productName = ride;
 			productReference = 029587572C9EC62C00DEF056 /* ride.app */;
@@ -195,6 +240,10 @@
 			);
 			mainGroup = 0295874E2C9EC62C00DEF056;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				029587862C9ECA0D00DEF056 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+				029587892C9ED10300DEF056 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 029587582C9EC62C00DEF056 /* Products */;
 			projectDirPath = "";
@@ -398,6 +447,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ride/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ride/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -426,6 +476,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ride/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ride/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -552,6 +603,63 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		029587862C9ECA0D00DEF056 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+		029587892C9ED10300DEF056 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		029587872C9ECA0D00DEF056 /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 029587862C9ECA0D00DEF056 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+		0295878A2C9ED10300DEF056 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 029587892C9ED10300DEF056 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		0295878C2C9ED10300DEF056 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 029587892C9ED10300DEF056 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		0295878E2C9ED10300DEF056 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 029587892C9ED10300DEF056 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		029587902C9ED10300DEF056 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 029587892C9ED10300DEF056 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		029587922C9ED10300DEF056 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 029587892C9ED10300DEF056 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		029587982C9ED2DD00DEF056 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 029587892C9ED10300DEF056 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0295874F2C9EC62C00DEF056 /* Project object */;
 }
